@@ -1,0 +1,17 @@
+.background {
+    background-color: #CBC3E3;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.leftpanel {
+    background-image: url(/Users/Mayteacup/VSCode/Odin/signuppractice/bookcoffee.jpg);
+    width: 100%; /* Adjust as necessary */
+  height: 100%; /* Adjust as necessary */
+  object-fit: cover; /* Makes sure the image covers the container without distortion */
+}
+
+.rightpanel
