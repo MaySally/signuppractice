@@ -10,11 +10,53 @@
     <div class="background">
         <div class="leftpanel">
             <div class="logo"></div>
+            <p>This is not real</p>
         </div>
         <div class="rightpanel">
-            Hi how are you
-            <div class="signup"></div>
-            <div class="createaccount"></div>
+            <div class="info">
+                <h1> Book Club seeks members</h1>
+                <p> For people who like reading and want to hang out and talk about books.</p>
+            </div>
+            <div class="signup">
+                <p>Sign up here</p>
+                <form action="#" method="post">
+                    <!-- First Name -->
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                    <br><br>
+                    
+                    <!-- Last Name -->
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                    <br><br>
+                    
+                    <!-- Email -->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    
+                    <!-- Phone Number -->
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <small>Format: 123-456-7890</small>
+                    <br><br>
+                    
+                    <!-- Password -->
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <br><br>
+                    
+                    <!-- Confirm Password -->
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <br><br>
+                </form>
+    
+            </div>
+            <div class="createaccount">
+                <button type="submit" class="create-btn">Create Account</button>
+                <p>Already a member? <a href="index.html"> Login</a></p>
+            </div>
         </div>
     </div>  
 </body>

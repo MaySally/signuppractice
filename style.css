@@ -4,14 +4,85 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
 }
 
 .leftpanel {
-    background-image: url(/Users/Mayteacup/VSCode/Odin/signuppractice/bookcoffee.jpg);
-    width: 100%; /* Adjust as necessary */
+  background-image: url(logo.png), url(bookcoffee.jpg);
+  background-repeat: no-repeat;
+  background-position: left top, center center;
+  background-size: auto, cover;
+  min-width: 40%;
   height: 100%; /* Adjust as necessary */
   object-fit: cover; /* Makes sure the image covers the container without distortion */
+  display: flex;
 }
 
-.rightpanel
+.leftpanel p {
+  align-self: flex-end;
+  color: black;
+  font-size: 24px;
+}
+
+.rightpanel {
+  min-width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.signup {
+  background-color: #E6D8FF; /* Light purple background */
+  border-radius: 12px; /* Rounded corners */
+  border: 1px solid #D3B8FF; /* Faint light purple border */
+  box-shadow: 0 6px 12px rgba(67, 59, 81, 0.5); /* Light purple shadow */
+  padding: 20px; /* Add some padding for content inside the div */
+  margin: 20px; /* Optional: to give some space around the div */
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap; /* Allow the input fields to wrap */
+  gap: 20px; /* Add some space between form elements */
+  justify-content: space-around;
+}
+
+/* Input field styling */
+input {
+  width: 48%; /* 2 input boxes per row (48% for spacing) */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.createaccount {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* Button styling */
+.create-btn {
+  background-color: #5e2a8c; /* Dark purple */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding inside the button */
+  border-radius: 12px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  align-self: flex-start;
+}
+
+.create-btn:hover {
+  background-color: #4b1d73; /* Darker purple on hover */
+}
